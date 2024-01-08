@@ -53,6 +53,12 @@ img {
     padding: var(--pad-size);
     width: min(95%, var(--card-size));
     background-color: var(--clr-neutral-white);
+    transition: box-shadow .5s ease;
+    box-shadow: 10px 10px var(--clr-neutral-black);
+}
+
+.card:hover {
+    box-shadow: 20px 20px var(--clr-neutral-black);
 }
 
 .card__img {
@@ -79,6 +85,12 @@ img {
     font-size: 1.5rem;
     font-weight: var(--fw-bolder);
     color: var(--clr-neutral-black);
+    transition: all .5s ease;
+}
+
+.card__title:hover {
+    cursor: pointer;
+    color: var(--clr-primary-yellow);
 }
 
 .card__description {
